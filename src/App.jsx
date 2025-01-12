@@ -1,24 +1,24 @@
 import "./App.css";
+import Menu from "./components/Menu";
+import Hello from "./components/Hello";
 
+import Projects from "./components/Projects";
+import Knowledge from "./components/Knowledge";
+import Education from "./components/Education";
+import AboutMe from "./components/AboutMe";
 function App() {
   return (
     <>
-      <h1 className="font-bold text-white">Hola, soy José Montes de Oca</h1>
-      <p>
-        Un desarrollador full-stack con experiencia en JavaScript. Me encanta
-        transformar ideas en realidad a través del desarrollo web.
-      </p>
-      <h2>Las tecnologias que suelo usar</h2>
-      <ul>
-        <li>React</li>
-        <li>Tailwind CSS</li>
-        <li>Vite</li>
-        <li>Next.js</li>
-        <li>MongoDB</li>
-        <li>PayloadCMS</li>
-        <li>Node.js</li>
-        <li>React Native</li>
-      </ul>
+      {/*poner un icono de menu que solo se vea en mobile*/}
+      {/*hacer condicional paraquese renderice el menu cuando se le de clickal menu no se si va interferir el display non en patalla lg  */}
+
+      <Menu />
+      {/*hacer el menu vertical y que no se vea en mobile display none */}
+      <Hello />
+      <Projects />
+      <Knowledge />
+      <Education />
+      <AboutMe />
     </>
   );
 }
