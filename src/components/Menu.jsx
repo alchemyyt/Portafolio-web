@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 export default function menu() {
   return (
-    <div>
+    <div className="bg-blue-900 p-6">
       <ul>
         <li>
           <Link to="/" spy={true} smooth={true} offset={50} duration={500}>
