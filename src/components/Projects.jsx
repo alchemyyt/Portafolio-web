@@ -1,16 +1,42 @@
+import { useState } from "react";
+import MobileAppProject from "./MobileAppProject";
+import MobileAppProjectComplete from "./MobileAppProjectComplete";
+import NewsAnimeWebSiteProjectComplete from "./NewsAnimeWebSiteProjectComplete";
+import SqueduleWebSiteProjectComplete from "./SqueduleWebSiteProjectComplete";
+import SqueduleWebSiteProject from "./SqueduleWebSiteProject";
+import NewsAnimeWebSiteProject from "./NewsAnimeWebSiteProject";
 export default function Proyects() {
+  const [activeProject, setActiveProject] = useState(null);
+  const handleProjectClick = (projectId) => {
+    setActiveProject(projectId === activeProject ? null : projectId);
+  };
   return (
-    <div>
-      <h2>Proyectos</h2>
-      <ul>
-        <li>App de horario de anime en español react native</li>
-        <li>
-          Pagina web de anime horario de anime en españos con su api rest next
-          js
-        </li>
-        <li>
-          Pagina de anime en general fronend con nextjs y api con payload cms
-        </li>
+    <div id="projects" className="bg-blue-900 text-lg p-6 my-6">
+      <h2 className="font-bold">Proyectos</h2>
+      <ul className="xl:flex md:flex xl:justify-center">
+        <MobileAppProject onClick={() => handleProjectClick("mobileApp")} />
+        <SqueduleWebSiteProject
+          onClick={() => handleProjectClick("squedule")}
+        />
+        <NewsAnimeWebSiteProject
+          onClick={() => handleProjectClick("newsAnime")}
+        />
+
+        {activeProject === "mobileApp" && (
+          <MobileAppProjectComplete
+            onClick={() => handleProjectClick("mobileApp")}
+          />
+        )}
+        {activeProject === "newsAnime" && (
+          <NewsAnimeWebSiteProjectComplete
+            onClick={() => handleProjectClick("newsAnime")}
+          />
+        )}
+        {activeProject === "squedule" && (
+          <SqueduleWebSiteProjectComplete
+            onClick={() => handleProjectClick("squedule")}
+          />
+        )}
       </ul>
       {/*descripcion, tecnologias,imagen,cofigo 
       mostrar icono de github e ir a la pagina y tecnologias si se leda click a la tarjeta se ve mas info con descripcion */}

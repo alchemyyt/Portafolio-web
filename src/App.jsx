@@ -3,6 +3,7 @@ import { Cross as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Menu from "./components/Menu";
+import MenuDesktop from "./components/MenuDesktop";
 import Hello from "./components/Hello";
 
 import Projects from "./components/Projects";
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className=" mb-6 ">
+      <div className=" mb-6 xl:hidden ">
         <div className=" border-2 border-blue-900 bg-blue-950 top-0 left-0 z-50 ">
           <Hamburger
             size={20}
@@ -36,15 +37,13 @@ function App() {
           {isOpen ? <Menu /> : null}
         </motion.div>
       </div>
-      {/*poner un icono de menu que solo se vea en mobile*/}
-      {/*hacer condicional paraquese renderice el menu cuando se le de clickal menu no se si va interferir el display non en patalla lg  */}
 
-      {/*hacer el menu vertical y que no se vea en mobile display none */}
+      <MenuDesktop />
       <Hello />
       <Projects />
       <Knowledge />
-      <Education />
       <AboutMe />
+      <Education />
     </>
   );
 }
