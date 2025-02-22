@@ -5,7 +5,7 @@ export default function menu() {
       <ul>
         <li className="hover:color-amber-300">
           <Link to="hello" spy={true} smooth={true} offset={0} duration={500}>
-            Hello
+            Introducción
           </Link>
         </li>
         <li>
@@ -27,12 +27,12 @@ export default function menu() {
             offset={0}
             duration={500}
           >
-            Conocimientos Tecnicos
+            Habilidades Técnicas
           </Link>
         </li>
         <li>
           <Link to="aboutMe" spy={true} smooth={true} offset={0} duration={500}>
-            Sobre mi
+            Sobre Mí
           </Link>
         </li>
         <li>
@@ -43,7 +43,7 @@ export default function menu() {
             offset={0}
             duration={500}
           >
-            Formacion
+            Formación
           </Link>
         </li>
       </ul>

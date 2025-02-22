@@ -4,7 +4,7 @@ import { GoX } from "react-icons/go";
 export default function NewsAnimeWebSiteComplete({ onClick }) {
   return (
     <div className="fixed top-0 left-0 z-10 w-full h-full bg-blue-600/90 flex flex-col items-center p-10 overflow-scroll">
-      <h3 className="font-bold text-2xl">Pagina web CMS de anime en español</h3>
+      <h3 className="font-bold text-2xl">Página web CMS de anime en español</h3>
       <p>
         Es una página web desarrollada utilizando Next.js para el frontend y
         Payload CMS para el backend.

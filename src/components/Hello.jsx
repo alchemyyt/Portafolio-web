@@ -23,7 +23,7 @@ export default function Hello() {
         <span className="text-amber-300 text-xl"> José Montes de Oca</span>
       </h1>
       <p>
-        Un desarrollador full-stack de 25 años enfocado en JavaScript . Me
+        Un desarrollador full stack de 25 años enfocado en JavaScript . Me
         encanta transformar ideas en realidad a través del desarrollo web.
       </p>
       <p>Este es mi correo josemontesdeoca00@gmail.com</p>
@@ -31,13 +31,12 @@ export default function Hello() {
         {copied ? "Copiado!" : <FiCopy />}
       </button>
       <div>
-        <a
-          href={pdfUrl}
-          download="joseMontesDeOcaCv.pdf"
-          className="text-amber-300 text-xl"
-        >
-          Descargar CV
-        </a>
+        <object data={pdfUrl} type="application/pdf" className=" w-full h-96">
+          <p>
+            Tu navegador no soporta la visualización de PDFs.
+            <a href={pdfUrl}>Descarga el PDF aquí</a>.
+          </p>
+        </object>
         <br />
       </div>
       <ul className="flex flex-row items-center justify-center m-6">

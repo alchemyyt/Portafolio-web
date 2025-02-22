@@ -4,11 +4,11 @@ import intermediate from "../assets/diploma-intermediate-core.pdf";
 export default function Education() {
   return (
     <div id="education" className="bg-blue-900 pt-4">
-      <h3 className=" text-2xl font-bold">Formacion</h3>
+      <h3 className=" text-2xl font-bold">Formación</h3>
       <ul>
         <li className=" flex flex-col justify-center p-4">
           <h4 className="text-xl font-bold mb-6">
-            Diploma de full stack developer con javascript
+            Diploma de full stack developer con JavaScript
           </h4>
           <object data={pdf} type="application/pdf" className=" w-full h-96">
             <p>
@@ -19,7 +19,7 @@ export default function Education() {
         </li>
         <li className=" flex flex-col justify-center p-4">
           <h4 className="text-xl font-bold mb-6">
-            Diploma de ingles principiante
+            Diploma de inglés principiante
           </h4>
           <object
             data={beginner}
@@ -34,7 +34,7 @@ export default function Education() {
         </li>
         <li className=" flex flex-col justify-center p-4">
           <h4 className="text-xl font-bold mb-6">
-            Diploma de ingles intermedio
+            Diploma de inglés intermedio
           </h4>
           <object
             data={intermediate}

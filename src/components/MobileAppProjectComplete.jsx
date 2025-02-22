@@ -3,7 +3,7 @@ import image from "../assets/appComplete.jpg";
 export default function MobileAppProjectComplete({ onClick }) {
   return (
     <div className="fixed top-0 left-0 z-10 w-full h-full bg-blue-600/90 flex flex-col items-center p-10 overflow-scroll">
-      <h3 className="font-bold text-2xl">App Horario de Anime en Español</h3>
+      <h3 className="font-bold text-2xl">App Horario de anime en español</h3>
       <p>
         Esta aplicación móvil, desarrollada con React Native, permite a los
         usuarios consultar de forma sencilla los horarios de estreno de sus

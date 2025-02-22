@@ -12,7 +12,7 @@ export default function MenuDesktop() {
             duration={500}
             activeClass="active"
           >
-            Hello
+            Introducción
           </Link>
         </li>
         <li>
@@ -36,7 +36,7 @@ export default function MenuDesktop() {
             duration={500}
             activeClass="active"
           >
-            Conocimientos Tecnicos
+            Habilidades Técnicas
           </Link>
         </li>
         <li>
@@ -48,7 +48,7 @@ export default function MenuDesktop() {
             duration={500}
             activeClass="active"
           >
-            Sobre mi
+            Sobre Mí
           </Link>
         </li>
         <li>
@@ -60,7 +60,7 @@ export default function MenuDesktop() {
             duration={500}
             activeClass="active"
           >
-            Formacion
+            Formación
           </Link>
         </li>
       </ul>

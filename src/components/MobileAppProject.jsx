@@ -13,11 +13,11 @@ export default function MobileAppProject({ onClick }) {
           onClick={onClick}
         />
         <h3 className="font-bold ">
-          App Movil Horario de Anime en Español con React Native
+          App Móvil Horario de anime en español con React Native
         </h3>
         <p className="font-thin m-4">
-          Aplicacion android que dice el dia y lugar de estreno de los animes en
-          español de la temporada y tambien ofrece su informacion completa.
+          Aplicación Android que dice el día y lugar de estreno de los animes en
+          español de la temporada y también ofrece su información completa.
         </p>
         <div className=" flex justify-center m-6 items-center flex-wrap gap-4">
           <div className="flex justify-center items-center gap-2">

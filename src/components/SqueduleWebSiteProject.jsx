@@ -18,12 +18,12 @@ export default function SqueduleWebSiteProject({ onClick }) {
       <li className="bg-blue-800 p-1 flex flex-col rounded-xl max-w-96 h-full justify-between">
         <img src={image} className="rounded-xl w-full" onClick={onClick} />
         <h3 className="font-bold ">
-          Pagina Web Horario de anime en español+API REST con NEXT.js
+          Página web: Horario de anime en español + API REST con NEXT.js.
         </h3>
         <p className="font-thin m-4">
-          Pagina web que dice el dia y lugar de estreno de los animes en español
-          de la temporada y tambien ofrece su informacion completa y tambien una
-          APi REST de que se llena con un formulario.
+          Página web que dice el día y lugar de estreno de los animes en español
+          de la temporada y también ofrece su información completa y también una
+          API REST que se llena con un formulario.
         </p>
         <div className=" flex justify-center m-6 items-center flex-wrap gap-4">
           <div className="flex justify-center items-center gap-2">
