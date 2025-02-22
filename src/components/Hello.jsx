@@ -2,7 +2,7 @@ import { FiCopy } from "react-icons/fi";
 import { FaGithub, FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useState } from "react";
-import pdfUrl from "./src/assets/cv.pdf";
+import pdfUrl from "../assets/cv.pdf";
 export default function Hello() {
   const [copied, setCopied] = useState(false);
   const email = "josemontesdeoca00@gmail.com";
