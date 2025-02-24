@@ -12,18 +12,16 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
 import image from "../assets/webImage.jpg";
+import { useTranslation } from "react-i18next";
 export default function SqueduleWebSiteProject({ onClick }) {
+  const { t, i18n } = useTranslation();
   return (
     <div className="m-2 ">
       <li className="bg-blue-800 p-1 flex flex-col rounded-xl max-w-96 h-full justify-between">
         <img src={image} className="rounded-xl w-full" onClick={onClick} />
-        <h3 className="font-bold ">
-          Página web: Horario de anime en español + API REST con NEXT.js.
-        </h3>
+        <h3 className="font-bold ">{t("SquedulePageComponent.title")}</h3>
         <p className="font-thin m-4">
-          Página web que dice el día y lugar de estreno de los animes en español
-          de la temporada y también ofrece su información completa y también una
-          API REST que se llena con un formulario.
+          {t("SquedulePageComponent.description")}
         </p>
         <div className=" flex justify-center m-6 items-center flex-wrap gap-4">
           <div className="flex justify-center items-center gap-2">

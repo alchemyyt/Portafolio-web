@@ -5,14 +5,16 @@ import NewsAnimeWebSiteProjectComplete from "./NewsAnimeWebSiteProjectComplete";
 import SqueduleWebSiteProjectComplete from "./SqueduleWebSiteProjectComplete";
 import SqueduleWebSiteProject from "./SqueduleWebSiteProject";
 import NewsAnimeWebSiteProject from "./NewsAnimeWebSiteProject";
+import { useTranslation } from "react-i18next";
 export default function Proyects() {
+  const { t, i18n } = useTranslation();
   const [activeProject, setActiveProject] = useState(null);
   const handleProjectClick = (projectId) => {
     setActiveProject(projectId === activeProject ? null : projectId);
   };
   return (
     <div id="projects" className="bg-blue-900 text-lg p-6 my-6">
-      <h2 className="font-bold">Proyectos</h2>
+      <h2 className="font-bold">{t("ProyectsComponent.title")}</h2>
       <ul className="xl:flex md:flex xl:justify-center">
         <MobileAppProject onClick={() => handleProjectClick("mobileApp")} />
         <SqueduleWebSiteProject

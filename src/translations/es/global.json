@@ -1,0 +1,75 @@
+{
+  "changeLanguage": {
+    "title": "Cambiar idioma",
+    "es": "Español",
+    "en": "Inglés"
+  },
+  "HelloComponent": {
+    "hello": "Hola, soy",
+    "introduction": "Un desarrollador full stack de 25 años enfocado en JavaScript . Me encanta transformar ideas en realidad a través del desarrollo web.",
+    "email": "Este es mi correo"
+  },
+  "ProyectsComponent": {
+    "title": "Proyectos"
+  },
+  "MobileComponent": {
+    "title": "App Móvil Horario de anime en español con React Native",
+    "description": "Aplicación Android que dice el día y lugar de estreno de los animes en español de la temporada y también ofrece su información completa."
+  },
+  "MobileCompleteComponent": {
+    "title": "App Móvil Horario de anime en español con React Native",
+    "description": "Esta aplicación móvil, desarrollada con React Native, permite a los usuarios consultar de forma sencilla los horarios de estreno de sus animes favoritos en español. La información se obtiene de una API REST construida con Next.js, lo que garantiza una fuente de datos actualizada y confiable.",
+    "architecture": {
+      "title": "Arquitectura",
+      "introduction": "La aplicación sigue una arquitectura cliente-servidor:",
+      "client": " Cliente (React Native): La aplicación móvil se encarga de la interfaz de usuario, la interacción con el usuario y la presentación de los datos.",
+      "server": "Servidor (Next.js): La API RESTful en el servidor Next.js proporciona los datos de horarios de anime en formato JSON."
+    }
+  },
+  "NewsPageComponent": {
+    "title": "Sitio web CMS de artículos de anime",
+    "description": " Sitio web de noticias y artículos de opinión sobre anime; el frontend está hecho con NEXT.js y el backend con Payload CMS."
+  },
+  "NewsPageCompleteComponent": {
+    "title": "Página web CMS de anime en español",
+    "description": " Es una página web desarrollada utilizando Next.js para el frontend y Payload CMS para el backend.",
+    "nextJs": "Next.js proporciona un framework para React que permite renderizado del lado del servidor (SSR), generación de sitios estáticos (SSG) y otras características avanzadas.",
+    "payloadCms": "Payload CMS actúa como un sistema de gestión de contenido (CMS) headless, permitiendo la creación y gestión de contenido a través de una API.",
+    "architecture": {
+      "title": "Arquitectura",
+      "client": " Frontend (Next.js): Desarrollado con Next.js. Se encarga de la presentación y la interacción con el usuario. Consume datos desde la API de Payload CMS. Utiliza enrutamiento dinámico y componentes reutilizables.",
+      "server": "Backend (Payload CMS): Sistema de gestión de contenido headless. Permite la creación y gestión de contenido (textos, imágenes, etc.). Expone una API GraphQL o REST para que el frontend consuma los datos. Proporciona un panel de administración para la gestión de contenido."
+    }
+  },
+  "SquedulePageComponent": {
+    "title": "Página web Horario de anime en español + API REST con NEXT.js.",
+    "description": "Página web que dice el día y lugar de estreno de los animes en español de la temporada y también ofrece su información completa y también una API REST que se llena con un formulario."
+  },
+  "SquedulePageCompleteComponent": {
+    "title": "Página web Horario de anime en español + API REST",
+    "description": "Esta página web desarrollada con Next.js muestra un horario de anime en español. La página consume datos de una API REST propia y permite la actualización de los datos a través de un formulario.",
+    "architecture": {
+      "title": "Arquitectura",
+      "client": "Frontend: Crea los componentes de Horario y Formulario. Implementa la lógica para consumir la API REST y mostrar los datos en el componente del Horario.",
+      "server": "Backend: Con el método GET obtienes los datos de los animes y con el método POST en el formulario actualizas los animes de la nueva temporada."
+    }
+  },
+  "Knowledge": {
+    "title": "Las tecnologías que suelo usar",
+    "dataBase": "Base de datos",
+    "mobile": "Móvil",
+    "versionControl": "Control de versiones"
+  },
+  "AboutMe": {
+    "title": "Sobre mí",
+    "info": "Desde que descubrí el mundo de la programación en 2017 mientras estudiaba en la universidad en Venezuela, supe que esta sería mi pasión. Con 25 años y mucho tiempo de estudio dedicado al desarrollo web, me he especializado en crear soluciones innovadoras y funcionales utilizando JavaScript como mi lenguaje principal; actualmente resido en Colombia."
+  },
+  "Education": {
+    "title": "Formación",
+    "javascript": "Diploma de full stack developer con JavaScript",
+    "englishA1": "Diploma de inglés principiante",
+    "englishB1": "Diploma de inglés intermedio",
+    "errorPdf": "Tu navegador no soporta la visualización de PDFs.",
+    "donwload": "Descarga el PDF aquí"
+  }
+}

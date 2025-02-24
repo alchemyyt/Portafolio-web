@@ -1,0 +1,75 @@
+{
+  "changeLanguage": {
+    "title": "Change language ",
+    "es": "Spanish",
+    "en": "English"
+  },
+  "HelloComponent": {
+    "hello": "Hello, i am",
+    "introduction": "A 25-year-old full-stack developer focused on JavaScript. I love transforming ideas into reality through web development.",
+    "email": "This is my email"
+  },
+  "ProyectsComponent": {
+    "title": "Projects"
+  },
+  "MobileComponent": {
+    "title": "Spanish Anime Schedule Mobile App with React Native",
+    "description": "Android application that tells the day and place of premiere of the animes in Spanish of the season and also offers its complete information."
+  },
+  "MobileCompleteComponent": {
+    "title": "Spanish Anime Schedule Mobile App with React Native",
+    "description": "This mobile application, developed with React Native, allows users to easily check the premiere schedules of their favorite anime in Spanish. The information is obtained from a REST API built with Next.js, which guarantees an updated and reliable data source.",
+    "architecture": {
+      "title": "Architecture",
+      "introduction": "The application follows a client-server architecture:",
+      "client": "Client (React Native): The mobile application is responsible for the user interface, user interaction, and data presentation.",
+      "server": "Server (Next.js): The RESTful API on the Next.js server provides anime schedule data in JSON format."
+    }
+  },
+  "NewsPageComponent": {
+    "title": "Anime article CMS website",
+    "description": "Website for news and opinion articles about anime; the frontend is made with NEXT.js and the backend with Payload CMS."
+  },
+  "NewsPageCompleteComponent": {
+    "title": "Spanish anime CMS website",
+    "description": "It is a web page developed using Next.js for the frontend and Payload CMS for the backend.",
+    "nextJs": "Next.js provides a framework for React that enables server-side rendering (SSR), static site generation (SSG), and other advanced features.",
+    "payloadCms": "Payload CMS acts as a headless content management system (CMS), allowing the creation and management of content through an API.",
+    "architecture": {
+      "title": "Architecture",
+      "client": "Frontend (Next.js): Developed with Next.js. It handles the presentation and user interaction. It consumes data from the Payload CMS API. It uses dynamic routing and reusable components.",
+      "server": "Backend (Payload CMS): Headless content management system. It allows the creation and management of content (texts, images, etc.). It exposes a GraphQL or REST API for the frontend to consume the data. It provides an administration panel for content management."
+    }
+  },
+  "SquedulePageComponent": {
+    "title": "Spanish Anime Schedule Website + REST API with Next.js.",
+    "description": "Website that tells the day and place of premiere of anime in Spanish of the season and also offers its complete information and also a REST API that is filled with a form."
+  },
+  "SquedulePageCompleteComponent": {
+    "title": "Spanish Anime Schedule Website with REST API",
+    "description": "This website, developed with Next.js, displays an anime schedule in Spanish. The page consumes data from its own REST API and allows data updates through a form.",
+    "architecture": {
+      "title": "Architecture",
+      "client": "Frontend: Create the Schedule and Form components. Implement the logic to consume the REST API and display the data in the Schedule component.",
+      "server": "Backend: With the GET method, you obtain the anime data, and with the POST method in the form, you update the anime for the new season."
+    }
+  },
+  "Knowledge": {
+    "title": "The technologies I usually use",
+    "dataBase": "Database",
+    "mobile": "Mobile",
+    "versionControl": "Version Control"
+  },
+  "AboutMe": {
+    "title": "About me",
+    "info": "Since I discovered the world of programming in 2017 while studying at university in Venezuela, I knew this would be my passion. At 25 years old and with a lot of study time dedicated to web development, I have specialized in creating innovative and functional solutions using JavaScript as my main language; I currently reside in Colombia."
+  },
+  "Education": {
+    "title": "Education",
+    "javascript": "Diploma of Full Stack Developer with JavaScript",
+    "englishA1": "Beginner English Diploma.",
+    "englishB1": "Intermediate English Diploma.",
+    "errorPdf": "Your browser does not support viewing PDFs.",
+    "donwload": "Download the PDF here"
+  }
+}

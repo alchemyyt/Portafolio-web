@@ -3,10 +3,12 @@ import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { SiPayloadcms } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { TbBrandReactNative } from "react-icons/tb";
+import { useTranslation } from "react-i18next";
 export default function Knowledge() {
+  const { t, i18n } = useTranslation();
   return (
     <div id="knowledge" className="bg-blue-900 text-lg p-6 my-6">
-      <h2 className="font-bold">Las tecnologías que suelo usar</h2>
+      <h2 className="font-bold">{t("Knowledge.title")}</h2>
       <ul>
         <li>
           <h3 className="font-bold">Frontend</h3>
@@ -35,7 +37,7 @@ export default function Knowledge() {
       </ul>
       <ul>
         <li>
-          <h3 className="font-bold">Base de datos</h3>
+          <h3 className="font-bold">{t("Knowledge.dataBase")}</h3>
         </li>
         <li className="flex items-center justify-center gap-2">
           <DiMongodb size={20} />
@@ -44,7 +46,7 @@ export default function Knowledge() {
       </ul>
       <ul>
         <li>
-          <h3 className="font-bold">Móvil</h3>
+          <h3 className="font-bold">{t("Knowledge.mobile")}</h3>
         </li>
         <li className="flex items-center justify-center gap-2">
           <TbBrandReactNative size={20} />
@@ -53,7 +55,7 @@ export default function Knowledge() {
       </ul>
       <ul>
         <li>
-          <h3 className="font-bold">Control de versiones</h3>
+          <h3 className="font-bold">{t("Knowledge.versionControl")}</h3>
         </li>
         <li className="flex items-center justify-center gap-2">
           <FaGitAlt size={20} />

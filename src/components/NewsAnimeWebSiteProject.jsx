@@ -3,16 +3,15 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPayloadcms } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import image from "../assets/webCmsImage.jpg";
+import { useTranslation } from "react-i18next";
 export default function NewsAnimeWebSite({ onClick }) {
+  const { t, i18n } = useTranslation();
   return (
     <div className="m-2">
       <li className="bg-blue-800 p-1 flex flex-col rounded-xl max-w-96 h-full justify-between ">
         <img src={image} className="rounded-xl w-full" onClick={onClick} />
-        <h3 className="font-bold ">Sitio web CMS de artículos de anime</h3>
-        <p className="font-thin m-4">
-          Sitio web de noticias y artículos de opinión sobre anime; el frontend
-          está hecho con NEXT.js y el backend con Payload CMS.
-        </p>
+        <h3 className="font-bold ">{t("NewsPageComponent.title")}</h3>
+        <p className="font-thin m-4">{t("NewsPageComponent.description")}</p>
         <div className=" flex justify-center m-6 items-center flex-wrap gap-4">
           <div className="flex justify-center items-center gap-2">
             <RiTailwindCssFill size={20} />

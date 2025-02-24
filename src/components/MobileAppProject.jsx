@@ -3,7 +3,9 @@ import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { TbBrandReactNative } from "react-icons/tb";
 import { SiExpo } from "react-icons/si";
 import image from "../assets/appImage.jpg";
+import { useTranslation } from "react-i18next";
 export default function MobileAppProject({ onClick }) {
+  const { t, i18n } = useTranslation();
   return (
     <div className="m-2">
       <li className="bg-blue-800 p-1 flex flex-col rounded-xl max-w-96 h-full justify-between">
@@ -12,13 +14,8 @@ export default function MobileAppProject({ onClick }) {
           className="rounded-xl w-full cursor-pointer"
           onClick={onClick}
         />
-        <h3 className="font-bold ">
-          App Móvil Horario de anime en español con React Native
-        </h3>
-        <p className="font-thin m-4">
-          Aplicación Android que dice el día y lugar de estreno de los animes en
-          español de la temporada y también ofrece su información completa.
-        </p>
+        <h3 className="font-bold ">{t("MobileComponent.title")}</h3>
+        <p className="font-thin m-4">{t("MobileComponent.description")}</p>
         <div className=" flex justify-center m-6 items-center flex-wrap gap-4">
           <div className="flex justify-center items-center gap-2">
             <RiTailwindCssFill size={20} />

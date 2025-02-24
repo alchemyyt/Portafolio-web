@@ -3,7 +3,9 @@ import { FaGithub, FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { useState } from "react";
 import pdfUrl from "../assets/cv.pdf";
+import { useTranslation } from "react-i18next";
 export default function Hello() {
+  const { t, i18n } = useTranslation();
   const [copied, setCopied] = useState(false);
   const email = "josemontesdeoca00@gmail.com";
   const handleClick = () => {
@@ -19,22 +21,19 @@ export default function Hello() {
   return (
     <div className="bg-blue-900 text-lg p-6" id="hello">
       <h1 className="font-bold text-white">
-        Hola, soy
+        {t("HelloComponent.hello")}
         <span className="text-amber-300 text-xl"> José Montes de Oca</span>
       </h1>
-      <p>
-        Un desarrollador full stack de 25 años enfocado en JavaScript . Me
-        encanta transformar ideas en realidad a través del desarrollo web.
-      </p>
-      <p>Este es mi correo josemontesdeoca00@gmail.com</p>
+      <p>{t("HelloComponent.introduction")}</p>
+      <p>{t("HelloComponent.email")} josemontesdeoca00@gmail.com</p>
       <button onClick={handleClick} className="text-amber-300">
         {copied ? "Copiado!" : <FiCopy />}
       </button>
       <div>
         <object data={pdfUrl} type="application/pdf" className=" w-full h-96">
           <p>
-            Tu navegador no soporta la visualización de PDFs.
-            <a href={pdfUrl}>Descarga el PDF aquí</a>.
+            {t("Education.errorPdf")}
+            <a href={pdfUrl}>{t("Education.donwload")}</a>.
           </p>
         </object>
         <br />
